@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+* {	
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: 'PT Sans', sans-serif;
+	background-color: white;
+	color: rgb(0,36,94);
+}
+
+.navigation {
+	height: 50px;
+	background-color: inherit;
+	width: 100%;
+	z-index: 1;
+}
+
+ul {
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 40px;
+}
+
+ul > li {
+	display: inline-block;
+}
+
+ul > li > a {
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+	color: rgb(0,36,94);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul > li > a:hover {
+	color: rgb(0,174,239);
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.container-grid {
+	width: 70%;
+	margin: 0 auto;
+}
+.row {
+	height: auto;
+	display: flex;
+}
+
+p {
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+/* Logo */
+div.logo {
+	height: auto;
+	margin-bottom: 70px;
+	box-shadow: 0 7px 4px -3px lightgray;
+}
+div.logo img {
+	height: 250px;
+	margin-bottom: 20px;
+}
+div.line {
+	height: 90px;
+	width: 100%;
+	background-color: rgb(0,36,94);
+	margin-top: 20px;
+	box-shadow: -1px 3px 36px -15px rgba(0,0,0,0.75);'
+}
+
+div.col-3 .image1, div.col-3 .image2, div.col-3 .image3, div.col-3 .image4 {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 3px solid white;
+	margin-top: -80px;
+}
+
+div.col-3 .image1 {
+	background-image: url(https://i.ytimg.com/vi/UK-HTIRVTlE/maxresdefault.jpg);
+	background-size: 170%;
+	background-position: center;
+}
+
+div.col-3 .image2 {
+	background-image: url(http://www.lotos.pl/upload/media/68_app_header_images_path_gama2.jpg);
+	background-size: 200%;
+	background-position: -140px;
+}
+
+div.col-3 .image3 {
+	background-image: url(http://studioopinii.pl/wp-content/uploads/2014/09/pendolino_pap.jpeg);
+	background-size: 155%;
+	background-position: left;
+}
+
+div.col-3 .image4 {
+	background-image: url(http://www.joc.com/sites/default/files/field_feature_image/WEB_CSX_Ohio_Railyard_IMG_8170.jpg);
+	background-size: 150%;
+	background-position: center;
+	margin-bottom: 100px;
+}
+
+div.col-3 .image1:hover, div.col-3 .image2:hover, div.col-3 .image3:hover, div.col-3 .image4:hover {
+	background-image: none;
+	background-color: rgb(0,36,94);
+	box-shadow: -1px 3px 56px 1px rgba(0,0,0,0.75);
+}
+
+.text1 {
+	line-height: 200px;
+	text-align: center;
+	visibility: hidden;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+.image1:hover .text1, .image2:hover .text1, .image3:hover .text1, .image4:hover .text1 {
+	visibility: visible;
+}
+
+/* Conference */
+div.conference {
+	height: auto;
+	margin-top: 10px;
+	box-shadow: 0 7px 4px -3px lightgray;
+}
+
+div.conference h2, div.partners h2 {
+	text-align: center;
+}
+
+
+/* Partners */
+div.partners {
+	height: auto;
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+	box-shadow: 0 7px 4px -3px lightgray;
+}
+div.partners img {
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+div.partners div.row p {
+	padding: 40px 0 40px 0;
+}
+
+
+
+@media (max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
+	div.line {
+		visibility: hidden;
+	}
+	div.col-3 .image1, div.col-3 .image2, div.col-3 .image3, div.col-3 .image4 {
+		margin-top: 10px;
+		text-align: center;
+	}
+	div.logo img {
+		margin: 0 auto;
+		height: auto;
+		margin-bottom: -40px;
+		margin-top: 20px;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	.navigation {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.navigation ul {
+		width: 100%;
+		margin: 0 auto;
+	}
+	ul > li {
+		display: block;
+		margin-top: 10px;
+	}
+	div.col-3 {
+		display: block;
+		width: 100%;
+	}
+	ul > li > a {
+		line-height: 15px;
+	}
+}
+
